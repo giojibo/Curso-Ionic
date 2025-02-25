@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/data.service';
+import { Componente } from './interfaces/interfaces';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +10,13 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  constructor() {}
+  componentes: Observable<Componente[]> | undefined;
+  constructor(
+    private dataService: DataService,
+  ) {}
+
+  ngOnInit()
+  {
+    this.componentes = this.dataService.getMenuOpts();
+  }
 }

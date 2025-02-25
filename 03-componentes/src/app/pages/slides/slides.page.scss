@@ -1,0 +1,52 @@
+.slide-full {
+  height: 100vh !important;
+}
+
+:host ::ng-deep .swiper-slide,
+.custom-slide {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Container for proper positioning */
+.slide-container {
+  position: relative;
+  padding-top: 32px; /* Space for the overlapping image */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+ion-card {
+  overflow: unset !important; /* Permite que los elementos hijos sobresalgan */
+  height: 200px;
+  width: 300px;              /* Valor base para el apilamiento */
+}
+
+/* Configuración de la imagen para que se posicione sobre el ion-card */
+.slide-image {
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  position: relative;
+  top: -50px;
+
+}
+ion-card-header {
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+ion-card-content {
+    position: relative;
+    top: -60px;
+    text-align: center;
+    margin-bottom: 10px;
+}

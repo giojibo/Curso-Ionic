@@ -1,8 +1,6 @@
 <app-header titulo="List - Sliding "></app-header>
 <ion-content>
-  <ion-list>
-    <ion-list>
-
+    <ion-list >
       <ion-item-sliding *ngFor="let user of usuarios | async">
         <ion-item-options side="start">
           <ion-item-option  (click)="favorite(user)">
@@ -28,5 +26,4 @@
       </ion-item-sliding>
 
     </ion-list>
-  </ion-list>
 </ion-content>

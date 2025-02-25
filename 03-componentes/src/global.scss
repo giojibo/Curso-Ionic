@@ -39,3 +39,27 @@
 .Rojo, .Rojo .sc-ion-action-sheet-md{
   color: red !important;
 }
+
+ion-item{
+  --background: transparent;
+}
+ion-searchbar{
+  --box-shadow: none !important;
+}
+
+@import "~swiper/swiper-bundle.css";
+
+.slider-1 {
+  background-color: red;
+  height: 100%;
+}
+
+.slider-2 {
+  background-color: blue;
+  height: 100%;
+}
+
+.slider-3 {
+  background-color: green;
+  height: 100%;
+}
